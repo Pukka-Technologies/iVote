@@ -5,7 +5,7 @@ import { AiOutlineSearch } from "react-icons/ai";
 const Navbar = () => {
   return (
     <nav>
-      <div className='flex flex-row justify-around'>
+      <div className='flex flex-row justify-around text-white pt-9'>
         <div className="font-bold uppercase text-2xl">Logo</div>
         <div>
           <ul className='flex flex-row gap-8 text-lg'>
