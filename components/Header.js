@@ -10,7 +10,7 @@ const Header = () => {
         <div className="pt-56">
           <div className="flex flex-col justify-center items-center text-white">
             <h1 className="text-6xl font-bold">
-              Seamless Contest Execution with Oshikii
+              Seamless Event Execution with Media Billo
             </h1>
             <p className="text-xl pt-2 pb-2">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
