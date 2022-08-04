@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: {
         "header-img": "url('../public/assets/header-bg.jpg')",
       },
+      fontFamily: {
+        text: ["'Poppins', sans-serif"],
+      },
     },
   },
   plugins: [],
