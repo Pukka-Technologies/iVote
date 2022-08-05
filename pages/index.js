@@ -1,5 +1,7 @@
+import About from "../components/About";
 import Features from "../components/Features";
 import Header from "../components/Header";
+import Steps from "../components/Steps";
 
 
 export default function Home() {
@@ -7,6 +9,8 @@ export default function Home() {
     <div>
       <Header/>
       <Features/>
+      <About/>
+      <Steps/>
     </div>
   );
 }

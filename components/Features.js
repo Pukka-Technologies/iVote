@@ -7,7 +7,7 @@ import {RiSpeedLine} from "react-icons/ri"
 
 const Features = () => {
   return (
-    <div className="flex flex-col justify-center items-center font-text pt-20 relative">
+    <div className="flex flex-col justify-center items-center font-text pt-20">
       <h1 className="pb-5 text-5xl font-bold after:bg-green-400 after:block after:w-16 after:h-1 after:absolute after:bottom-30 after:left-[48%]">
         Features
       </h1>
