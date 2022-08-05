@@ -11,7 +11,7 @@ const Features = () => {
       <h1 className="pb-5 text-5xl font-bold after:bg-green-400 after:block after:w-16 after:h-1 after:absolute after:bottom-30 after:left-[48%]">
         Features
       </h1>
-      <div className="grid grid-cols-3 gap-8 px-10">
+      <div className="grid grid-cols-3 gap-8 px-20">
         <div className="relative p-10 after:absolute after:block after:content-['01'] after:text-green-100 after:font-extrabold after:text-9xl after:opacity-50 after:bottom-0 after:right-0">
           <p className="w-fit p-3 bg-green-400">
             <GrSecure />
@@ -52,7 +52,7 @@ const Features = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-5 px-10">
+      <div className="grid grid-cols-3 gap-5 px-20">
         <div className="relative p-10 after:absolute after:block after:content-['04'] after:text-green-100 after:font-extrabold after:text-9xl after:opacity-50 after:bottom-0 after:right-0">
           <p className="w-fit p-3 bg-green-400">
             <BsHandThumbsUp />

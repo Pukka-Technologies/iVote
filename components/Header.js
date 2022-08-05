@@ -9,7 +9,7 @@ const Header = () => {
         <Navbar />
         <div className="items-center pt-40 flex flex-col justify-center">
           <div className=" text-white font-text flex flex-col items-center">
-            <h1 className="text-7xl font-extrabold w-8/12 text-center after:bg-green-400 after:block after:w-16 after:h-1 after:absolute after:top-96 after:left-[50%]">
+            <h1 className="text-7xl font-extrabold w-8/12 text-center after:bg-green-400 after:block after:w-16 after:h-1 after:absolute after:top-96 after:left-[49%]">
               Event Execution with 
               <span className="text-green-400"> Media Billo</span>
             </h1>
