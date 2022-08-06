@@ -4,7 +4,7 @@ const conts = [2,3,4,5,6,7,8,9,1]
 const Contestantpage = () => {
   return (
     <div>
-      <div className="bg-green-400 ">
+      <div className="bg-green-300  ">
         <Navbar />
       </div>
 
@@ -13,7 +13,7 @@ const Contestantpage = () => {
       </div>
 
       <div className="py-3  flex flex-wrap justify-center">
-        <div className="min-h-screen bg-gradient-to-tr from-green-300 to-yellow-200 flex justify-center items-center py-5 px-10 w-full mx-10">
+        <div className="min-h-screen bg-gradient-to-tr from-blue-300 to-violet-200 flex justify-center items-center py-5 px-10 w-full mx-10">
           <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 space-y-4 md:space-y-0 ">
             {/* FIRST CARD STARTS HERE */}
             {
