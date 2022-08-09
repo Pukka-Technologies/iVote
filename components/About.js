@@ -6,7 +6,7 @@ const About = () => {
     <div className="flex flex-col justify-center items-center font-text pt-32">
       <div className="grid grid-cols-2 px-32">
         <div className="flex flex-col justify-center relative z-[1]">
-          <h1 className="pb-8 text-5xl font-bold after:bg-green-400 after:block after:w-16 after:h-1 after:absolute after:bottom-30 after:left-[8.5%]">
+          <h1 className="pb-8 text-5xl font-bold after:bg-green-400 after:block after:mt-2 after:w-16 after:h-1 after:absolute after:bottom-30 after:left-[7.5%]">
             About
           </h1>
 
@@ -23,7 +23,7 @@ const About = () => {
         </div>
 
         <div>
-          <img src={phoneImg} alt="phone" className="w-11/12"/>
+          <img src={phoneImg} alt="phone" className="w-11/12" />
         </div>
       </div>
     </div>
