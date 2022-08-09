@@ -12,28 +12,28 @@ const Steps = () => {
       </h1>
 
       <div className="grid grid-cols-4 py-16 gap-10 px-20">
-        <article className="border-2 flex flex-col justify-center items-center p-5 relative before:content-['1'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
-          <div className="min-h-4">
+        <article className="border-2 flex flex-col justify-center items-center p-10 relative before:content-['1'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
+          <div>
             <img src={register} alt="Register yourself" className="w-44" />
           </div>
           <p className="pt-5 text-center">
             Register yourself by filling the required information
           </p>
         </article>
-        <article className="border-2 flex flex-col justify-center items-center p-5 relative before:content-['2'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
-          <div className="min-h-40">
+        <article className="border-2 flex flex-col justify-center items-center p-10 relative before:content-['2'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
+          <div>
             <img src={signin} alt="Sign in" className="w-44" />
           </div>
           <p className="pt-5 text-center">Sign in as a user</p>
         </article>
-        <article className="border-2 flex flex-col justify-center items-center p-5 relative before:content-['3'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
-          <div className="min-h-40">
+        <article className="border-2 flex flex-col justify-center items-center p-10 relative before:content-['3'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
+          <div>
             <img src={dashboard} alt="Vote" className="w-44" />
           </div>
           <p className="pt-5 text-center">Go to vote option on dashboard</p>
         </article>
-        <article className="border-2 flex flex-col justify-center items-center p-5 relative before:content-['4'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
-          <div className="min-h-40">
+        <article className="border-2 flex flex-col justify-center items-center p-10 relative before:content-['4'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5">
+          <div>
             <img src={vote} alt="vote for candidate" className="w-44" />
           </div>
           <p className="pt-5 text-center">
