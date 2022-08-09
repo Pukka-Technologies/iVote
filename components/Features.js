@@ -1,9 +1,9 @@
 import React from "react";
-import {GrSecure} from "react-icons/gr"
+import { GrSecure } from "react-icons/gr";
 import { BsPhone, BsHandThumbsUp } from "react-icons/bs";
-import {HiOutlineCheckCircle} from "react-icons/hi"
-import {AiOutlineDollar} from "react-icons/ai"
-import {RiSpeedLine} from "react-icons/ri"
+import { HiOutlineCheckCircle } from "react-icons/hi";
+import { AiOutlineDollar } from "react-icons/ai";
+import { RiSpeedLine } from "react-icons/ri";
 
 const Features = () => {
   return (
