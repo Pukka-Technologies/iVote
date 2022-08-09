@@ -16,7 +16,7 @@ const Footer = () => {
             <FaInstagram />
           </p>
         </div>
-        <div>ⒸPukkaTech</div>
+        <div>Media Billo Company Limited Ⓒ2022 Limited not imitations</div>
       </div>
     </footer>
   );
