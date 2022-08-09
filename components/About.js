@@ -23,7 +23,7 @@ const About = () => {
         </div>
 
         <div>
-          <img src={phoneImg} alt="phone" className="w-11/12" />
+          <img src={phoneImg} alt="phone" className="w-11/12"/>
         </div>
       </div>
     </div>
