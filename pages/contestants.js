@@ -3,8 +3,8 @@ import Navbar from "../components/Navbar";
 const conts = [2,3,4,5,6,7,8,9,1]
 const Contestantpage = () => {
   return (
-    <div>
-      <div className="bg-green-300  ">
+    <div >
+      <div className="bg-gradient-to-r from-green-400 to-green-600  ">
         <Navbar />
       </div>
 
@@ -12,28 +12,28 @@ const Contestantpage = () => {
         <p className="">HOME/EVENTS/CONTESTANTS</p>
       </div>
 
-      <div className="py-3  flex flex-wrap justify-center">
-        <div className="min-h-screen bg-gradient-to-tr from-blue-300 to-violet-200 flex justify-center items-center py-5 px-10 w-full mx-10">
-          <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-6 space-y-4 md:space-y-0 ">
+      <div className="py-2  flex flex-wrap justify-center">
+        <div className="min-h-screen  flex justify-center items-center py-5 px-10 w-full mx-10">
+          <div className="md:px-4 md:grid md:grid-cols-2 lg:grid-cols-3 gap-10 space-y-4 md:space-y-0 ">
             {/* FIRST CARD STARTS HERE */}
             {
               conts.map(cont => (
                 <div className="max-w-sm bg-white px-4 pt-6 pb-2 rounded-xl shadow-lg transform hover:scale-105 transition duration-500  ">
-                <h3 className="mb-3 text-xl font-bold text-indigo-600">
+                {/* <h3 className="mb-3 text-xl font-bold text-black-600">
                   MISS WORLD 2021
-                </h3>
+                </h3> */}
                 <div className="relative">
                   {/* CONTESTANTS IMAGE GOES HERE */}
                   <div className="w-full h-44 rounded-xl">
                     <img
                       className="w-full h-full object-contain"
-                      src="https://images.unsplash.com/photo-1613876215075-276fd62c89a4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80https://images.unsplash.com/photo-1541701494587-cb58502866ab?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                      src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
                       alt="Colors"
                     />
                   </div>
   
                   <div className="text-center pt-2">
-                    <button className="w-24 p-2 flex items-center justify-center space-x-2 bg-gradient-to-r from-green-400 to-green-600 transform hover:scale-110 rounded-md transition ease-in duration-200 focus:outline-none">
+                    <button className="w-22 ml-10 p-1 flex items-center justify-center space-x-2  bg-gradient-to-r from-green-400 to-green-600 transform hover:scale-110 rounded-md transition ease-in duration-200 focus:outline-none">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6  text-white font-bold"
@@ -54,15 +54,15 @@ const Contestantpage = () => {
                     </button>
                   </div>
                 </div>
-                <h1 className="mt-4 text-gray-800 text-2xl font-bold cursor-pointer text-center">
+                <h1 className="mt-4 text-gray-800 text-l font-bold cursor-pointer text-center">
                   AKUA FORSON
                 </h1>
   
                 <div className="my-4">
                   <div className="flex   items-center">
-                    <p className="pl-2 items-center">CODE :</p>
-                    <span className="text-gray-400  flex-1">9560</span>
-                    <p className="pr-2">VOTES:</p>
+                    <p className="pl-2 m-1items-center">CODE:</p>
+                    <span className="text-gray-400 m-1 flex-1">9560</span>
+                    <p className=" m-1 ml-2 " >VOTES:</p>
                     <span className="text-gray-400 flex">331</span>
                   </div>
                 </div>
