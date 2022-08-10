@@ -29,9 +29,9 @@ const Forgotpassword = () => {
           </div>
 
           <div class='flex  mt-16'>
-            <AiOutlineArrowLeft className=" lg:mt-7 md:mt-7 mt-6"/>
+            <AiOutlineArrowLeft className=" lg:mt-6 md:mt-7 mt-6"/>
             <Link href={"login"} >
-            <h3 class="pt-5 text-[darkslategray] md:text-xl mb-4 ml-2 cursor-pointer">
+            <h3 class="pt-5 text-[darkslategray] md:text-[16px] mb-4 ml-2 cursor-pointer">
            Log in
             </h3>
           </Link>

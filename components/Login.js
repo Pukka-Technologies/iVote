@@ -41,7 +41,7 @@ const Login = () => {
 
         <div >
           <Link href={"forgotpassword"}>
-            <h3 class="text-[darkslategray] md:text-xl cursor-pointer md:mr-[9rem] mr-44">
+            <h3 class="text-[darkslategray]  text-sm cursor-pointer md:mr-48 mr-[12rem]">
               Forgot Password?
             </h3>
           </Link>
