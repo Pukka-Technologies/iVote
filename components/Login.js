@@ -1,48 +1,61 @@
-import React from 'react'
-
+import Link from "next/link";
+import React from "react";
+import { BsFillPersonFill } from "react-icons/bs";
+import { HiLockClosed } from "react-icons/hi";
 
 const Login = () => {
-
-
   return (
-    <div class="bg-green-400   max-w-screen-2xl px-6  m-auto">
-<div class='flex items-center justify-around flex-wrap'>
-<div  class='basis-[50%] min-w-[300px]'>
-  <img src='/assets/Login-bro.png' alt='' class='max-w-full pt-12 pr-12' />
-</div>
+    <div class="bg-white   w-screen h-screen flex items-center justify-around flex-wrap">
+      <div>
+        <div class='flex items-center  justify-around'>
+        <img src="/assets/logo.jpg"  alt="Logo"  class='w-[100px] mb-5'/>
+        </div>
+      
+      <form class="bg-gray-200  w-[400px] py-5 px-3 flex items-center justify-center flex-col gap-3">
+        <div class="flex items-center  w-[80%] bg-white py-1 gap-2">
+          <BsFillPersonFill className="text-xl ml-1" />
 
+          <input
+            id="username"
+            name="username"
+            type="text"
+            autoComplete="off"
+            required
+            placeholder="username"
+            class="lg:w-full md:w-[20rem]  outline-none bg-transparent  border-sky-900"
+          />
+        </div>
 
+        <div class="flex items-center w-[80%] bg-white py-1 gap-2 ">
+          <HiLockClosed className="text-xl ml-1" />
 
-<div class='basis-[50%] min-w-[300px] pl-12'>
- <form >
-  <h1 class='text-5xl font-bold font-sans text-slate-900 pb-4'>Login</h1>
-<label for="email-address" class='text-2xl font-medium font-sans text-slate-900 '>Email</label>
-<div className='pt-2 pb-2'>
-  <input id="email" name="email" type="text" class='w-full md:w-[26rem] h-10  outline-none pl-3 rounded'/>
-</div>
-<label for="password" class='text-2xl font-medium font-sans text-slate-900'>Password</label>
-<div  className='pt-2'>
-  <input id="password" name="password" type="password" class='w-full md:w-[26rem] h-10  outline-none pl-3 rounded'/>
-</div>
-<div>
-  <h3 class='pt-5 text-[darkslategray] text-2xl'>Forgot Password?</h3>
-</div>
-<div class='mt-6'> 
-  <button class='bg-[#001212] w-full md:w-64 h-10 text-neutral-200 rounded'>LOGIN</button></div>
+          <input
+            id="password"
+            name="password"
+            type="password"
+            placeholder="password"
+            required
+            class="lg:w-full md:w-[20rem]  outline-none bg-transparent  border-sky-900"
+          />
+        </div>
 
-
-
-
-
-
-  
- </form>
-</div>
-</div>
-
-
+        <div >
+          <Link href={"forgotpassword"}>
+            <h3 class="text-[darkslategray] md:text-xl cursor-pointer md:mr-[9rem] mr-44">
+              Forgot Password?
+            </h3>
+          </Link>
+        </div>
+        <div class="mt-4  w-[80%]">
+          <button class="bg-[#001212] lg:w-full py-2 md:w-[20rem] w-[18.92rem] text-white ">
+            LOGIN
+          </button>
+        </div>
+      </form>
+      </div>
+      
     </div>
-  )
-}
+  );
+};
 
-export default Login
+export default Login;

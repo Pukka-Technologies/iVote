@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         "header-img": "url('../public/assets/header-bg.jpg')",
       },
+     
     },
   },
   plugins: [],
