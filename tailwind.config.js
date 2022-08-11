@@ -9,6 +9,7 @@ module.exports = {
       backgroundImage: {
         "header-img": "url('../public/assets/header-bg.jpg')",
         "events-header-img": "url('../public/assets/events1.jpg')",
+        "events-header-img-two": "url('../public/assets/events2.jpg')",
       },
       fontFamily: {
         text: ["'Poppins', sans-serif"],

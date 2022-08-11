@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 const Events = () => {
   return (
-    <section className="bg-gray-200">
-      <div className="grid grid-cols-3 px-20 gap-8 font-text py-10">
-        <article className="bg-white rounded-xl overflow-hidden">
+    <section className="bg-gray-100">
+      <div className="grid grid-cols-3 px-20 gap-12 font-text py-10">
+        <article className="bg-white rounded-lg overflow-hidden">
           <div className="bg-events-header-img h-52 bg-no-repeat bg-center bg-cover"></div>
           <div className="flex gap-8 px-5 py-8">
             <div>
@@ -22,8 +22,8 @@ const Events = () => {
             </div>
           </div>
         </article>
-        <article className="bg-white rounded-t-full">
-          <div className="bg-events-header-img h-52 bg-no-repeat bg-center bg-cover"></div>
+        <article className="bg-white rounded-lg overflow-hidden">
+          <div className="bg-events-header-img-two h-52 bg-no-repeat bg-center bg-cover"></div>
           <div className="flex gap-8 px-5 py-5">
             <div>
               <h6 className="text-green-400 font-extrabold text-xs">APR</h6>
@@ -40,7 +40,7 @@ const Events = () => {
             </div>
           </div>
         </article>
-        <article className="bg-white rounded-t-full">
+        <article className="bg-white rounded-lg overflow-hidden">
           <div className="bg-events-header-img h-52 bg-no-repeat bg-center bg-cover"></div>
           <div className="flex gap-8 px-5 py-5">
             <div>
@@ -61,6 +61,6 @@ const Events = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Events
+export default Events;
