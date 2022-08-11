@@ -3,7 +3,7 @@ import Navbar from './Navbar'
 
 const Header = () => {
   return (
-    <div className="bg-header-img h-screen bg-no-repeat bg-center bg-cover relative z-10">
+    <section className="bg-header-img h-screen bg-no-repeat bg-center bg-cover relative z-10">
       <div className="bg-black h-screen opacity-60 absolute w-full"></div>
       <div className="z-20 relative">
         <Navbar />
@@ -28,7 +28,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

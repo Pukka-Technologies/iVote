@@ -3,10 +3,10 @@ const phoneImg = "/assets/phone.jpg";
 
 const About = () => {
   return (
-    <div className="flex flex-col justify-center items-center font-text pt-32">
+    <section className="flex flex-col justify-center items-center font-text pt-32">
       <div className="grid grid-cols-2 px-32">
-        <div className="flex flex-col justify-center relative z-[1]">
-          <h1 className="pb-8 text-5xl font-bold after:bg-green-400 after:block after:w-16 after:h-1 after:absolute after:bottom-30 after:left-[8.5%]">
+        <article className="flex flex-col justify-center relative z-[1]">
+          <h1 className="pb-8 text-5xl font-bold after:bg-green-400 after:block after:mt-2 after:w-16 after:h-1 after:absolute after:bottom-30 after:left-[7.5%]">
             About
           </h1>
 
@@ -20,13 +20,13 @@ const About = () => {
             and solve the modern issues like higher reachability of the booth,
             crowd free voting, inexpensive, faster results and others.
           </p>
-        </div>
+        </article>
 
-        <div>
+        <article>
           <img src={phoneImg} alt="phone" className="w-11/12" />
-        </div>
+        </article>
       </div>
-    </div>
+    </section>
   );
 };
 
