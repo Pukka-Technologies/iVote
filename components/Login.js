@@ -22,7 +22,7 @@ const Login = () => {
             autoComplete="off"
             required
             placeholder="username"
-            class="lg:w-full md:w-[20rem]  outline-none bg-transparent  border-sky-900"
+            class="lg:w-full md:w-[20rem]  outline-none bg-transparent  border-solid border-[1px] border-cyan-800 focus-visible:border-gray-900"
           />
         </div>
 
@@ -35,7 +35,7 @@ const Login = () => {
             type="password"
             placeholder="password"
             required
-            class="lg:w-full md:w-[20rem]  outline-none bg-transparent  border-sky-900"
+            class="lg:w-full md:w-[20rem]  outline-none bg-transparent  border-solid border-[1px] border-cyan-800 focus-visible:border-gray-900"
           />
         </div>
 

@@ -19,7 +19,7 @@ const Forgotpassword = () => {
          placeholder="Email address"
               autoComplete="off"
               required
-              class="w-full h-10  outline-none pl-3  border-sky-900"
+              class="w-full h-10  outline-none pl-3  border-solid border-[1px] border-cyan-800 focus-visible:border-gray-900"
             />
           </div>
           <div class="mt-6">
