@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       backgroundImage: {
         "header-img": "url('../public/assets/header-bg.jpg')",
+        "events-header-img": "url('../public/assets/events1.jpg')",
       },
       fontFamily: {
         text: ["'Poppins', sans-serif"],
