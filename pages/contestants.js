@@ -24,7 +24,7 @@ const Contestantpage = () => {
                 </h3> */}
                 <div className="relative">
                   {/* CONTESTANTS IMAGE GOES HERE */}
-                  <div className="w-full h-44 rounded-xl">
+                  <div className="w-full h-80  rounded-xl">
                     <img
                       className="w-full h-full object-contain"
                       src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
@@ -33,7 +33,7 @@ const Contestantpage = () => {
                   </div>
   
                   <div className="text-center pt-2">
-                    <button className="w-22 ml-10 p-1 flex items-center justify-center space-x-2  bg-gradient-to-r from-green-400 to-green-600 transform hover:scale-110 rounded-md transition ease-in duration-200 focus:outline-none">
+                    <button className="w-22  p-1 flex items-center justify-center space-x-2  bg-gradient-to-r from-green-400 to-green-600 transform hover:scale-110 rounded-md transition ease-in duration-200 focus:outline-none">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6  text-white font-bold"
