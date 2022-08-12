@@ -8,7 +8,7 @@ const Event = ({ bg, month, date, title, paragraph }) => (
       <div
         className={`bg-[url(/assets/events1.jpg)] h-52 bg-no-repeat bg-center bg-cover`}
       ></div>
-      <div className="flex gap-8 px-5 py-8">
+      <div className="flex xl:gap-8 gap-4 px-5 py-8">
         <div>
           <h6 className="text-green-400 font-extrabold text-xs uppercase">
             {month}
@@ -27,7 +27,7 @@ const Event = ({ bg, month, date, title, paragraph }) => (
 const Events = () => {
   return (
     <section className="bg-gray-100">
-      <div className="grid grid-cols-3 px-20 gap-12 font-text py-20">
+      <div className="grid lg:grid-cols-3 md:px-20 px-4 gap-12 font-text py-20">
         {EventsData.map((eventData, index) => (
           <Event
             bg={eventData.imgURL}
