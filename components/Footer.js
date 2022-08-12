@@ -16,7 +16,7 @@ const Footer = () => {
             <FaInstagram />
           </p>
         </div>
-        <div>Media Billo Company Limited Ⓒ2022 Limited not imitations</div>
+        <div className="text-center md:text-left">Media Billo Company Limited Ⓒ2022 Limited not Limitations</div>
       </div>
     </footer>
   );
