@@ -4,7 +4,7 @@ import { BsHandThumbsUp } from "react-icons/bs";
 const Contestants = () => {
   return (
     <section className="font-text py-28 bg-gray-100">
-      <div className="grid grid-cols-3 gap-10 px-20">
+      <div className="grid lg:grid-cols-3 gap-10 md:px-20 px-4">
         <article className="bg-white rounded-lg overflow-hidden">
           <div
             className={`bg-[url(/assets/c1.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
@@ -72,7 +72,7 @@ const Contestants = () => {
         </article>
       </div>
 
-      <div className="grid grid-cols-3 gap-10 px-20 py-10">
+      <div className="grid lg:grid-cols-3 gap-10 md:px-20 px-4 py-10">
         <article className="bg-white rounded-lg overflow-hidden">
           <div
             className={`bg-[url(/assets/c4.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
