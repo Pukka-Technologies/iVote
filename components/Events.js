@@ -4,9 +4,9 @@ import Link from "next/link";
 
 const Event = ({ bg, month, date, title, paragraph }) => (
   <Link href={"/contestants"}>
-    <article className="bg-white rounded-lg overflow-hidden">
+    <article className="bg-white rounded-lg overflow-hidden cursor-pointer">
       <div
-        className={`bg-[url(/assets/header-bg.jpg)] h-52 bg-no-repeat bg-center bg-cover`}
+        className={`bg-[url(/assets/events1.jpg)] h-52 bg-no-repeat bg-center bg-cover`}
       ></div>
       <div className="flex gap-8 px-5 py-8">
         <div>
