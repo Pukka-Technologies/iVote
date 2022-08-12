@@ -7,7 +7,7 @@ const Contestants = () => {
       <div className="grid grid-cols-3 gap-10 px-20">
         <article className="bg-white rounded-lg overflow-hidden">
           <div
-            className={`bg-[url(/assets/events2.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
+            className={`bg-[url(/assets/c1.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
           ></div>
           <div className="py-4 px-5">
             <h5 className="uppercase text-xs font-extrabold text-green-400">
@@ -29,7 +29,7 @@ const Contestants = () => {
 
         <article className="bg-white rounded-lg overflow-hidden">
           <div
-            className={`bg-[url(/assets/events1.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
+            className={`bg-[url(/assets/c2.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
           ></div>
           <div className="py-4 px-5">
             <h5 className="uppercase text-xs font-extrabold text-green-400">
@@ -51,7 +51,7 @@ const Contestants = () => {
 
         <article className="bg-white rounded-lg overflow-hidden">
           <div
-            className={`bg-[url(/assets/events2.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
+            className={`bg-[url(/assets/c3.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
           ></div>
           <div className="py-4 px-5">
             <h5 className="uppercase text-xs font-extrabold text-green-400">
@@ -75,7 +75,7 @@ const Contestants = () => {
       <div className="grid grid-cols-3 gap-10 px-20 py-10">
         <article className="bg-white rounded-lg overflow-hidden">
           <div
-            className={`bg-[url(/assets/events2.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
+            className={`bg-[url(/assets/c4.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
           ></div>
           <div className="py-4 px-5">
             <h5 className="uppercase text-xs font-extrabold text-green-400">
@@ -97,7 +97,7 @@ const Contestants = () => {
 
         <article className="bg-white rounded-lg overflow-hidden">
           <div
-            className={`bg-[url(/assets/events1.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
+            className={`bg-[url(/assets/c5.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
           ></div>
           <div className="py-4 px-5">
             <h5 className="uppercase text-xs font-extrabold text-green-400">
@@ -119,7 +119,7 @@ const Contestants = () => {
 
         <article className="bg-white rounded-lg overflow-hidden">
           <div
-            className={`bg-[url(/assets/events2.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
+            className={`bg-[url(/assets/c1.jpg)] h-64 bg-no-repeat bg-center bg-cover`}
           ></div>
           <div className="py-4 px-5">
             <h5 className="uppercase text-xs font-extrabold text-green-400">
