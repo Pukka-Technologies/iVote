@@ -1,14 +1,13 @@
 import React from "react";
 import Link from "next/link";
-import { AiOutlineUser } from "react-icons/ai";
-import { AiOutlineSearch } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineBars, AiOutlineUser } from "react-icons/ai";
 
 const Navbar = () => {
   return (
     <nav>
-      <div className="flex flex-row justify-around text-white pt-9 font-text cursor-pointer">
-        <div className="font-extrabold uppercase text-2xl">Logo</div>
-        <div>
+      <div className="flex flex-row md:justify-around justify-between px-4 md:px-0 text-white pt-9 font-text cursor-pointer">
+        <div className="font-extrabold uppercase md:text-2xl text-lg">Logo</div>
+        <div className="hidden md:inline-block">
           <ul className="flex flex-row gap-8 text-lg">
             <Link href={"/"}>
               <li>Home</li>
@@ -23,6 +22,7 @@ const Navbar = () => {
         <div className="flex flex-row gap-2 text-lg">
           <AiOutlineUser />
           <AiOutlineSearch />
+          <span className="md:hidden"><AiOutlineBars/></span>
         </div>
       </div>
     </nav>

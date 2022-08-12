@@ -15,11 +15,11 @@ const Step = ({ imgURL, number, text }) => (
 const Steps = () => {
   return (
     <section className="flex flex-col justify-center items-center font-text pt-32">
-      <h1 className="pb-5 text-5xl font-bold after:bg-green-400 after:block after:mt-2 after:w-16 after:h-1 after:absolute after:bottom-30 after:left-[48%]">
+      <h1 className="pb-5 p-3 md:p-0 text-center md:text-left text-5xl font-bold after:bg-green-400 after:block after:mt-2 after:w-16 after:h-1 after:absolute after:bottom-30 after:md:left-[48%] after:left-[40%]">
         Follow these easy steps
       </h1>
 
-      <div className="grid grid-cols-4 py-16 gap-10 px-20">
+      <div className="grid xl:grid-cols-4 lg:grid-cols-2 py-16 gap-10 lg:px-20 px-10">
         {StepsData.map((stepData, index) => (
           <Step
             imgURL={stepData.imgURL}
