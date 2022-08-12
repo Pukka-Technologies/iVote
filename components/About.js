@@ -10,7 +10,7 @@ const About = () => {
             About
           </h1>
 
-          <p className="lg:w-10/12 relative before:content-['events'] before:font-bold before:text-9xl before:absolute before:text-green-100 before:opacity-60 before:md:bottom-60  before:bottom-[25rem]  before:md:right-40 before:right-1 before:z-[-1]">
+          <p className="lg:w-10/12 relative before:content-['events'] before:md:block before:hidden before:font-bold before:text-9xl before:absolute before:text-green-100 before:opacity-60 before:md:bottom-60  before:bottom-[25rem]  before:md:right-40 before:right-1 before:z-[-1]">
             An online voting system that will replace the old ballot system or
             paper system. Over the time, we have utilized the required
             technology in every sector to improve efficiency and save the extra
