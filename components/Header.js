@@ -1,5 +1,5 @@
-import React from 'react'
-import Navbar from './Navbar'
+import React from "react";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -30,6 +30,6 @@ const Header = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Header
+export default Header;
