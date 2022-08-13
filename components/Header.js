@@ -1,7 +1,5 @@
-import React from 'react'
-import Navbar from './Navbar'
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (
@@ -32,6 +30,6 @@ const Header = () => {
       </div>
     </section>
   );
-}
+};
 
-export default Header
+export default Header;
