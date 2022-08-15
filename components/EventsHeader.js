@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 
 const EventsHeader = () => {
   return (
-    <section className="h-[60vh] bg-header-img bg-no-repeat bg-center bg-cover relative z-10">
+    <section className="h-[60vh] bg-[url(/assets/header-bg.jpg)] bg-no-repeat bg-center bg-cover relative z-10">
       <div className="bg-black h-[60vh] opacity-60 absolute w-full"></div>
       <div className="z-20 relative font-text">
         <Navbar />
