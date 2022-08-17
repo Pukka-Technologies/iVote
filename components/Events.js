@@ -2,7 +2,7 @@ import React from "react";
 import EventsData from "../utils/events";
 import Link from "next/link";
 
-const Event = ({ bg, month, date, title, paragraph }) => (
+const Event = ({ month, date, title, paragraph }) => (
   <Link href={"/contestants"}>
     <article className="bg-white rounded-lg overflow-hidden cursor-pointer">
       <div
@@ -30,7 +30,6 @@ const Events = () => {
       <div className="grid lg:grid-cols-3 md:px-20 px-4 gap-12 font-text py-20">
         {EventsData.map((eventData, index) => (
           <Event
-            bg={eventData.imgURL}
             month={eventData.month}
             date={eventData.date}
             title={eventData.title}
