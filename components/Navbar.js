@@ -1,16 +1,18 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import { AiOutlineSearch, AiOutlineBars, AiOutlineUser } from "react-icons/ai";
+import { AiOutlineSearch, AiOutlineBars, AiOutlineUser, AiOutlineClose } from "react-icons/ai";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false)
+
 
   let menu 
 
   if (showMenu){
     menu = (
-      <div>
-        <ul className="flex flex-col gap-8 text-lg">
+      <div className="text-white w-full top-0 left-0 h-screen fixed bg-emerald-900 flex flex-col items-center gap-8 text-lg font-text animate-slide-in">
+        <AiOutlineClose onClick={() => setShowMenu(false)} />
+        <ul className="flex flex-col gap-8 text-center">
           <Link href={"/"}>
             <li>Home</li>
           </Link>
@@ -20,7 +22,6 @@ const Navbar = () => {
           <li>Terms and Conditions</li>
           <li>Contact Us</li>
         </ul>
-        <AiOutlineUser />
       </div>
     );
   }
@@ -44,7 +45,7 @@ const Navbar = () => {
         <div className="flex flex-row gap-2 text-lg">
           <AiOutlineUser />
           <AiOutlineSearch />
-          <span className="md:hidden"><AiOutlineBars onClick={() => setShowMenu(!showMenu)}/></span>
+          <span className="md:hidden"><AiOutlineBars onClick={() => setShowMenu(true)}/></span>
         </div>
       </div>
 
