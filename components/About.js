@@ -1,5 +1,5 @@
 import React from "react";
-const phoneImg = "/assets/phone.jpg";
+const phoneImg = "/assets/iVote-phone.png";
 
 const About = () => {
   return (
