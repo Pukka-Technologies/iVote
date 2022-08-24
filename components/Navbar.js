@@ -10,18 +10,28 @@ const Navbar = () => {
 
   if (showMenu){
     menu = (
-      <div className="text-white w-full top-0 left-0 h-screen fixed bg-emerald-900 flex flex-col items-center gap-8 text-lg font-text animate-slide-in">
-        <AiOutlineClose onClick={() => setShowMenu(false)} />
-        <ul className="flex flex-col gap-8 text-center">
+      <div className="text-white w-full top-0 left-0 h-screen fixed bg-emerald-900 flex flex-col gap-8 text-lg font-text animate-slide-in">
+        <div className="flex justify-between px-[1em] pb-[0.8em] mt-[1.5em] mb-[3em] border-b border-gray-500">
+          <h4 className="font-bold">Media Billo</h4>
+          <AiOutlineClose onClick={() => setShowMenu(false)} />
+        </div>
+        <ul className="flex flex-col gap-8 text-center items-center">
           <Link href={"/"}>
             <li>Home</li>
           </Link>
           <Link href={"/events"}>
             <li>Events</li>
           </Link>
-          <li>Terms and Conditions</li>
           <li>Contact Us</li>
+          <li>Terms and Conditions</li>
         </ul>
+        {/* <div className="flex items-end">
+          <ul className="flex flex-row">
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Twitter</li>
+          </ul>
+        </div> */}
       </div>
     );
   }
