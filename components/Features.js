@@ -52,7 +52,7 @@ const Features = () => {
         </article>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-5 md:px-20 relative z-[1] pt-3">
+      <div className="grid lg:grid-cols-3 gap-5 md:px-20 relative z-[1] pt-5">
         <article className="relative p-10 after:absolute after:block after:content-['04'] after:text-green-100 after:font-extrabold after:text-9xl after:opacity-50 after:bottom-0 after:md:right-0 after:right-10 after:z-[-1]">
           <p className="w-fit p-3 bg-green-400">
             <BsHandThumbsUp />

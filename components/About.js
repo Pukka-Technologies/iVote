@@ -6,11 +6,11 @@ const About = () => {
     <section className="flex flex-col justify-center items-center font-text pt-32">
       <div className="grid lg:grid-cols-2 md:px-32 px-8">
         <article className="flex flex-col justify-center relative z-[1]">
-          <h1 className="pb-8 text-5xl font-bold text-center  md:text-left after:bg-green-400 after:block after:mt-2 after:w-16 after:h-1 after:absolute after:bottom-30 after:md:left-[7.5%] after:left-[38%]">
+          <h1 className="pb-8 text-5xl font-bold text-center md:text-left after:bg-green-400 after:block after:mt-2 after:w-16 after:h-1 after:absolute after:bottom-30 after:md:left-[7.5%] after:left-[38%]">
             About
           </h1>
 
-          <p className="lg:w-10/12 relative before:content-['events'] before:md:block before:hidden before:font-bold before:text-9xl before:absolute before:text-green-100 before:opacity-60 before:md:bottom-60  before:bottom-[25rem]  before:md:right-40 before:right-1 before:z-[-1]">
+          <p className="lg:w-10/12 relative before:content-['events'] before:md:block before:hidden before:font-bold before:text-9xl before:absolute before:text-green-100 before:opacity-60 before:md:bottom-60 before:bottom-[25rem] before:md:right-40 before:right-1 before:z-[-1]">
             An online voting system that will replace the old ballot system or
             paper system. Over the time, we have utilized the required
             technology in every sector to improve efficiency and save the extra

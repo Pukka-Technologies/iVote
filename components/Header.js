@@ -17,7 +17,7 @@ const Header = () => {
               Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
-            <div className="flex gap-6 mb-20 md:mb-0">
+            <div className="flex md:gap-6 gap-3 mb-20 md:mb-0">
               <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
                 Get Started
               </button>
