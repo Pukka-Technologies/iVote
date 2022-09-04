@@ -19,3 +19,11 @@ export const getEventsByType = (events, type) => {
     }
     return events.filter((event) => getEventStatus(event.opening_date, event.closing_date) === type);
 }
+
+
+export const getContestantsByEvents = (contestants, _id) => {
+  let sorted = contestants.filter(
+    (contestant) => contestant.event_id === _id
+  );
+  return sorted;
+};
