@@ -1,9 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import StepsData from "../utils/steps";
 
 const Step = ({ imgURL, number, text }) => (
   <article
-    className={`border-2 flex flex-col justify-center items-center p-10 relative before:content-['${number}'] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5`}
+    number = {number}
+    className={`border-2 flex flex-col justify-center items-center p-10 relative before:content-[attr(number)] before:flex before:absolute before:text-green-100 before:text-4xl before:font-extrabold before:top-5 before:left-5`}
   >
     <div>
       <img src={imgURL} alt="Register yourself" className="w-44" />
