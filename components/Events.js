@@ -63,7 +63,7 @@ const Events = () => {
     <section className="bg-gray-100">
       {/* search bar */}
       <div className="flex justify-end items-center bg-white py-4">
-        <div className="flex items-center bg-gray-100 rounded-full w-[30%] px-4 py-3">
+        <div className="flex items-center bg-gray-100 rounded-full w-full md:w-[30%] px-4 py-3">
           <input
             className="bg-transparent w-full text-sm text-gray-600 font-semibold outline-none"
             type="text"
