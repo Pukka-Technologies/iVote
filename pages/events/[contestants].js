@@ -3,19 +3,59 @@ import React, { useEffect } from "react";
 import Participants from "../../components/Contestants";
 import ContestsHeader from "../../components/ContestsHeader";
 import Footer from "../../components/Footer";
+import { Empty } from "../../components/Promises";
+import { useStateValue } from "../../context/StateProvider";
+import { getContestantsByEvents } from "../../utils";
+import { fetchData } from "../../utils/functions";
 
 const Contestants = () => {
+  const [{ contestants, events }, dispatch] = useStateValue();
+  const router = useRouter();
+  const [id, setId] = React.useState(null);
 
-  const router = useRouter()
+  useEffect(() => {
+    if (router.asPath !== router.route) {
+      const { _id } = router.query;
+      setId(_id);
+      console.log(router.pathname);
+    }
+  }, [router]);
+  useEffect(() => {
+    events.length === 0 && fetchData("event", async (data) => {
+      if (data.success) {
+        // console.log(data.data)
+        dispatch({
+          type: "SET_EVENTS",
+          events: data.data,
+        });
+        // return data.data
+      }
+    });
 
-  const { participants } = router.query
+    contestants.length === 0 &&  fetchData("contestant", async (data) => {
+      if (data.success) {
+        // console.log(data.data)
+        dispatch({
+          type: "SET_CONTESTANTS",
+          contestants: data.data,
+        });
+        // return data.data
+      }
+    });
+  }, []);
 
   return (
-    <div>
-      <ContestsHeader />
-      <Participants contestants={JSON.parse(participants)} />
-      <Footer />
-    </div>
+    <>
+      {id && (
+        <div>
+          <ContestsHeader event={id} />
+          {
+            contestants.length === 0 ? <Empty text={"Loading contestants"} /> : <Participants contestants={getContestantsByEvents(contestants, id)} />
+          }
+          <Footer />
+        </div>
+      )}
+    </>
   );
 };
 

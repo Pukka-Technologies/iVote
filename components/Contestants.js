@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BsHandThumbsUp } from "react-icons/bs";
-
+import {Empty} from "./Promises"
 const Contestants = ({ contestants }) => {
   return (
     <section className="font-text py-28 bg-gray-100">
@@ -34,6 +34,9 @@ const Contestants = ({ contestants }) => {
           </>
         ))}
       </div>
+      {
+        contestants.length === 0 && <Empty text={'No Contestant in this event'} />
+      }
     </section>
   );
 };
