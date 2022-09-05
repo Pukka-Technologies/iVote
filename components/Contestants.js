@@ -7,8 +7,8 @@ const Contestants = ({ contestants }) => {
   const [filtered, setFiltered] = useState(contestants);
   return (
     <section className="font-text py-28 bg-gray-100">
-      <div className="w-full flex items-center justify-end py-2 px-20">
-        <div className="w-[30%]   flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
+      <div className="w-full flex items-center justify-center md:justify-end py-2 md:px-20">
+        <div className="w-[90%] md:w-[30%]   flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
           <input
             type="text"
             placeholder="Search contestant....."

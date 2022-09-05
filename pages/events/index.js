@@ -36,7 +36,7 @@ const Page = () => {
     <>
     <EventsHeader/>
     {
-      events.length > 0 ? <Events/> : <Fetching text={"Loading events"} />
+      events.length > 0 ? <Events /> : <Fetching text={"Loading events...."} />
     }
     <Footer/>
     </>
