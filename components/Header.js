@@ -1,9 +1,10 @@
+import "aos/dist/aos.css";
+
+import AOS from "aos";
+import Link from "next/link";
+import Navbar from "./Navbar";
 import React from "react";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import Navbar from "./Navbar";
-import Link from "next/link";
 
 const Header = () => {
   useEffect(() => {
