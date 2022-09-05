@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import React, { useState } from 'react'
 import { BsHandThumbsUp } from 'react-icons/bs'
-import VotePopup from './modal'
+import VotePopup from './Modal'
 
 const Contestant = ({contestant}) => {
     const [isOpen, setIsOpen] = useState(false);
