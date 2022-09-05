@@ -50,7 +50,7 @@ const Contestants = () => {
         <div>
           <ContestsHeader event={id} />
           {
-            contestants.length === 0 ? <Empty text={"Loading contestants"} /> : <Participants contestants={getContestantsByEvents(contestants, id)} />
+            contestants.length === 0 ? <Empty text={"Loading contestants"} /> : <Participants contestants={getContestantsByEvents(contestants, id)}  />
           }
           <Footer />
         </div>

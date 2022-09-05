@@ -20,7 +20,7 @@ const Event = ({ data, status }) => {
     <article className="bg-white rounded-lg overflow-hidden cursor-pointer">
       <div
         onClick={() =>
-          router.push({
+          status == "ongoing" && router.push({
             pathname: `/events/${name.toLowerCase().replace(/ /g,"_")}`,
             query: { _id: _id },
           })
@@ -62,7 +62,7 @@ const Event = ({ data, status }) => {
             <div
               className="bg-gray-400 hover:bg-gray-500 transition-all duration-100 ease-in-out  text-white font-bold text-xl uppercase px-4 py-2 rounded-lg"
               onClick={() =>
-                router.push({
+                status == "ongoing" && router.push({
                   pathname: `/events/${name.toLowerCase().replace(/ /g,"_")}`,
                   query: { _id: _id },
                 })
