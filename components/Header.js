@@ -1,9 +1,9 @@
 import React from "react";
 import { useEffect } from "react";
 import AOS from "aos";
-// import aos styles
 import "aos/dist/aos.css";
 import Navbar from "./Navbar";
+import Link from "next/link";
 
 const Header = () => {
   useEffect(() => {
@@ -33,10 +33,10 @@ const Header = () => {
             </p>
             <div className="flex md:gap-6 gap-3 mb-20 md:mb-0">
               <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
-                Get Started
+                Explore
               </button>
-              <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
-                Contestants
+              <Link href={'/events'} className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
+                Ongoing Events
               </button>
             </div>
           </div>

@@ -63,7 +63,8 @@ const VotePopup = ({ setIsOpen, isOpen, data }) => {
       .replace(/:/g, "-")
       .replace(/\./g, "-")
       .replace("Z", ""),
-    publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
+    // publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
+    secretKey: process.env.NEXT_PUBLIC_PAYSTACK_SECRET_KEY,
     currency: "GHS",
     email: email,
     amount: cost * 100,
