@@ -37,7 +37,7 @@ const Header = () => {
               </button>
               <Link href={'/events'} className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
                 Ongoing Events
-              </button>
+              </Link>
             </div>
           </div>
         </div>
