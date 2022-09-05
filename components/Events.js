@@ -1,11 +1,13 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useEffect, useState } from "react";
-import { useStateValue } from "../context/StateProvider";
-import { getEventStatus } from "../utils";
-import { fetchData } from "../utils/functions";
-import { FiSearch } from "react-icons/fi";
-import Event from "./Event";
+
 import { Empty, Fetching } from "./Promises";
+import React, { useEffect, useState } from "react";
+
+import Event from "./Event";
+import { FiSearch } from "react-icons/fi";
+import { fetchData } from "../utils/functions";
+import { getEventStatus } from "../utils";
+import { useStateValue } from "../context/StateProvider";
 
 const Events = () => {
   const [{ events, contestants }, dispatch] = useStateValue();
@@ -14,8 +16,8 @@ const Events = () => {
   return (
     <section className="bg-gray-100">
       {/* searchbar */}
-    <div className="w-full flex items-center justify-end py-2 px-20">
-    <div className="w-[30%]   flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
+    <div className="w-full flex items-center justify-center md:justify-end py-2 md:px-20">
+    <div className="w-[90%] md:w-[30%]   flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
         <input
           type="text"
           placeholder="Search event....."
