@@ -1,10 +1,12 @@
 import { Dialog, Transition } from "@headlessui/react";
-import Image from "next/image";
 import { Fragment, useState } from "react";
+
 import { AiOutlineClose } from "react-icons/ai";
-import { useStateValue } from "../../context/StateProvider";
+import Image from "next/image";
 import { toast } from "react-toastify";
 import { usePaystackPayment } from 'react-paystack'
+import { useStateValue } from "../../context/StateProvider";
+
 const VotePopup = ({ setIsOpen, isOpen, data }) => {
   const { name, imageURL, contestant_code, event_id } = data;
   const [{ events }, dispatch] = useStateValue();
@@ -65,6 +67,7 @@ const VotePopup = ({ setIsOpen, isOpen, data }) => {
       .replace("Z", ""),
     publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
     currency: "GHS",
+    channels: ["card", "qr", "mobile_money", "bank"],
     email: email,
     amount: cost * 100,
   };
@@ -175,9 +178,17 @@ const VotePopup = ({ setIsOpen, isOpen, data }) => {
                                 : "bg-green-400"
                             } text-white p-2 rounded-md mt-4`}
                             onClick={() => {
-                              paystackConfig.amount = cost * 100;
-                              paystackConfig.email = email || "bentilshadrack72@gmail.com";
-                              initializePay(onPaymentSuccess, onPaymentClose);
+                                if(verifyEmail(email)){
+                                  paystackConfig.amount = cost * 100;
+                                  paystackConfig.email = email;
+                                  initializePay(onPaymentSuccess, onPaymentClose);
+                                }else{
+                                  toast.error("Please enter a valid email", {
+                                    position: "top-center",
+                                    autoClose: 3000,
+                                    toastId: "vote-error",
+                                  });
+                                }
                             }}
                           >
                             Vote
