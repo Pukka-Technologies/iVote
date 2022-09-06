@@ -14,3 +14,19 @@ export const fetchData = async (route, callback) => {
     }
 
 }
+
+export const castVote = async (data, callback) => {
+    try {
+        const { data: res } = await Axios({
+            method: "POST",
+            url: "/vote",
+            data,
+        })
+
+        callback(res)
+
+    } catch (error) {
+        console.log(error)
+    }
+
+}
