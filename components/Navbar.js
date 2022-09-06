@@ -53,9 +53,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="flex flex-row gap-2 text-lg">
-          <AiOutlineUser />
-          <AiOutlineSearch />
-          <span className="md:hidden"><AiOutlineBars onClick={() => setShowMenu(true)}/></span>
+          {/* <AiOutlineUser /> */}
+          {/* <AiOutlineSearch /> */}
+          <span className="md:hidden text-lg"><AiOutlineBars onClick={() => setShowMenu(true)}/></span>
         </div>
       </div>
 
