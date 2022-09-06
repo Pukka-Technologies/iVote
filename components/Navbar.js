@@ -23,7 +23,7 @@ const Navbar = () => {
             <li>Events</li>
           </Link>
           <li>Contact Us</li>
-          <li>Terms and Conditions</li>
+          <li>About Us</li>
         </ul>
         {/* <div className="flex items-end">
           <ul className="flex flex-row">
