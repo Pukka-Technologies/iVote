@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import EventsData from "../utils/events";
 import Link from "next/link";
+import { fetchData } from "../utils/functions";
 
 const Event = ({ month, date, title, paragraph }) => (
   <Link href={"/contestants"}>
     <article className="bg-white rounded-lg overflow-hidden cursor-pointer">
       <div
-        className={`bg-[url(/assets/events1.jpg)] h-52 bg-no-repeat bg-center bg-cover`}
+        className={`bg-black h-52 bg-no-repeat bg-center bg-cover`}
       ></div>
       <div className="flex xl:gap-8 gap-4 px-5 py-8">
         <div>
@@ -25,16 +26,33 @@ const Event = ({ month, date, title, paragraph }) => (
 );
 
 const Events = () => {
+
+  const [events, setEvents] = useState([])
+
+  useEffect(() => {
+    fetchData("event", async (data) => {
+      if (data.success) {
+        // console.log(data.data)
+        setEvents(data.data)
+        console.log("events", Date(data.data[0].opening_date).split(" ")[2])
+        console.log("events", data.data)
+        // return data.data
+      } else {
+        console.log("late data",data);
+      }
+    })
+  }, [])
+
   return (
     <section className="bg-gray-100">
       <div className="grid lg:grid-cols-3 md:px-20 px-4 gap-12 font-text py-20">
-        {EventsData.map((eventData, index) => (
+        {events.map((event, index) => (
           <Event
-            month={eventData.month}
-            date={eventData.date}
-            title={eventData.title}
-            paragraph={eventData.paragraph}
-            key={index}
+            month={Date(event?.opening_date).split(" ")[1]}
+            date={Date(event?.opening_date).split(" ")[2]}
+            title={event.name}
+            paragraph={event.description}
+            key={event._id}
           />
         ))}
       </div>
