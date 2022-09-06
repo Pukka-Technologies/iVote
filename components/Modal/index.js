@@ -6,9 +6,10 @@ import Image from "next/image";
 import { toast } from "react-toastify";
 import { usePaystackPayment } from 'react-paystack'
 import { useStateValue } from "../../context/StateProvider";
+import { castVote } from "../../utils/functions";
 
 const VotePopup = ({ setIsOpen, isOpen, data }) => {
-  const { name, imageURL, contestant_code, event_id } = data;
+  const { name, imageURL, contestant_code, event_id, _id } = data;
   const [{ events }, dispatch] = useStateValue();
   const [email, setEmail] = useState("");
   const [vote, setVote] = useState("");
@@ -39,22 +40,38 @@ const VotePopup = ({ setIsOpen, isOpen, data }) => {
     setCost(val * vote_price);
   };
 
-  const onPaymentSuccess = () => {
+  const onPaymentSuccess = async() => {
     toast.success("Payment Succeeded", {
       position: "top-center",
       autoClose: 3000,
       toastId: "vote-success",
     });
     console.log("Payment Succeeded");
-  };
+    const voteData = {
+      contestant_id: _id,
+      event_id,
+      total_votes: vote,
+      cost,
+      type: "online"
+    }
+    await castVote(voteData, (res) => {
+      console.log(res);
+      toast.success("Vote casted successfully", {
+        position: "top-center",
+        autoClose: 3000,
+        toastId: "vote-success",
+      });
+    });
+  }
 
-  const onPaymentClose = () => {
+  const onPaymentClose = async() => {
     toast.error("Payment Failed", {
       position: "top-center",
       autoClose: 3000,
       toastId: "vote-error",
     });
     console.log("Payment Failed");
+
   };
 
   
@@ -69,6 +86,11 @@ const VotePopup = ({ setIsOpen, isOpen, data }) => {
     currency: "GHS",
     channels: ["card", "qr", "mobile_money", "bank"],
     email: email,
+    metadata: {
+      constestant_name: name,
+      contestant_code,
+      event_name: events.find((e) => e._id === event_id)?.name || event_id,
+    },
     amount: cost * 100,
   };
   
