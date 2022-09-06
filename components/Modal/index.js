@@ -147,8 +147,7 @@ const VotePopup = ({ setIsOpen, isOpen, data }) => {
                         </div>
                         <div className="flex flex-col items-start w-full gap-y-1">
                           <label className="flex text-sm items-center gap-x-2">
-                            Number of votes{" "}
-                            <span className="text-red-400">*</span>
+                            Number of votes <span className="text-red-400">*</span>
                           </label>
                           <input
                             type="number"
@@ -161,7 +160,7 @@ const VotePopup = ({ setIsOpen, isOpen, data }) => {
                           />
 
                           <label className="flex text-sm items-center gap-x-2">
-                            Email
+                            Email <span className="text-red-400">*</span>
                           </label>
                           <input
                             type="email"
