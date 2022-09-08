@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { AiOutlineSearch, AiOutlineBars, AiOutlineUser, AiOutlineClose } from "react-icons/ai";
 
-const Navbar = () => {
+const Aboutnav = () => {
   const [showMenu, setShowMenu] = useState(false)
 
 
@@ -10,7 +10,7 @@ const Navbar = () => {
 
   if (showMenu){
     menu = (
-      <div className="text-white w-full top-0 left-0 h-screen fixed bg-emerald-900 flex flex-col gap-8 text-lg font-text animate-slide-in">
+      <div className="text-black w-full top-0 left-0 h-screen fixed bg-emerald-900 flex flex-col gap-8 text-lg font-text animate-slide-in">
         <div className="flex justify-between px-[1em] pb-[0.8em] mt-[1.5em] mb-[3em] border-b border-gray-500">
           <h4 className="font-bold">Media Billo</h4>
           <AiOutlineClose onClick={() => setShowMenu(false)} />
@@ -22,10 +22,9 @@ const Navbar = () => {
           <Link href={"/events"}>
             <li>Events</li>
           </Link>
-          <Link href={"/contact"}>
-            <li>Contact Us</li>
-          </Link>
-          <li>About Us</li>
+          <li>Contact Us</li>
+         <li>About Us</li>
+         
         </ul>
         {/* <div className="flex items-end">
           <ul className="flex flex-row">
@@ -40,7 +39,7 @@ const Navbar = () => {
 
   return (
     <nav>
-      <div className="flex flex-row md:justify-around justify-between px-4 md:px-0 text-white pt-9 font-text cursor-pointer">
+      <div className="flex flex-row md:justify-around justify-between px-4 md:px-0 text-black pt-9 font-text cursor-pointer">
         <div className="font-extrabold uppercase md:text-2xl text-lg">Logo</div>
         <div className="hidden md:inline-block">
           <ul className="flex flex-row gap-8 text-lg">
@@ -50,8 +49,9 @@ const Navbar = () => {
             <Link href={"/events"}>
               <li>Events</li>
             </Link>
-            <Link href={"/about"}>   
-             <li>About Us</li></Link>
+          
+            <li>About Us</li>
+            
         
             <li>Contact Us</li>
           </ul>
@@ -68,4 +68,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Aboutnav;
