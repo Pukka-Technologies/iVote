@@ -12,16 +12,18 @@ const Header = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-[url(/assets/header-bg.jpg)] h-screen bg-no-repeat bg-center bg-cover relative z-10">
-      <div className="bg-black h-screen opacity-60 absolute w-full"></div>
-      <div className="z-20 relative">
+    <section className="bg-[url('../public/assets/header-bg.jpg')] h-screen bg-no-repeat bg-center bg-cover relative z-10">
+      <div className="bg-black h-screen opacity-50 absolute w-full"></div>
+      <div className="z-20 relative h-[90%]">
         <Navbar />
-        <div className="items-center 2xl:pt-40 pt-20 flex flex-col justify-center">
+        {/* <div>
+        </div> */}
+        <div className="flex flex-col items-center h-full justify-center">
           <div
             className=" text-white font-text flex flex-col items-center"
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
+            data-aos-easing="ease-in-sine" 
             data-aos-duration="600"
           >
             <h1 className="lg:text-7xl text-5xl font-extrabold md:w-8/12 px-5 md:px-0 text-center">
@@ -36,10 +38,10 @@ const Header = () => {
               <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
                 Explore
               </button>
-              <Link href={'/events'} passHref>
-              <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
-                Ongoing Events
-              </button>
+              <Link href={"/events"} passHref>
+                <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
+                  Ongoing Events
+                </button>
               </Link>
             </div>
           </div>

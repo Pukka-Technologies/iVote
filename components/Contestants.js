@@ -8,7 +8,7 @@ const Contestants = ({ contestants }) => {
   return (
     <section className="font-text bg-gray-100">
       <div className="w-full flex items-center justify-center md:justify-end py-2 md:px-20">
-        <div className="w-[90%] md:w-[30%]   flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
+        <div className="w-[90%] md:w-[30%]  flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
           <input
             type="text"
             placeholder="Search contestant....."
@@ -23,7 +23,7 @@ const Contestants = ({ contestants }) => {
           <FiSearch className="" />
         </div>
       </div>
-      <div className="grid lg:grid-cols-3 gap-10 md:px-20 px-4 my-2">
+      <div className="grid lg:grid-cols-3 gap-10 md:px-20 px-4 pb-20">
         {filtered.map((contestant) => (
           <Contestant key={contestant.id} contestant={contestant} />
         ))}
