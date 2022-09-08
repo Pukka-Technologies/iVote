@@ -1,13 +1,13 @@
 import React from "react";
 import Contact from "../components/Contact";
-import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import Aboutnav from "../components/Aboutnav";
 
 const ContactUs = () => {
   return (
     <>
       <div className="font-text md:min-h-screen">
-        <Navbar />
+        <Aboutnav/>
         <Contact />
       </div>
       <Footer/>
