@@ -23,7 +23,7 @@ const Header = () => {
             className=" text-white font-text flex flex-col items-center"
             data-aos="fade-up"
             data-aos-offset="200"
-            data-aos-easing="ease-in-sine"
+            data-aos-easing="ease-in-sine" 
             data-aos-duration="600"
           >
             <h1 className="lg:text-7xl text-5xl font-extrabold md:w-8/12 px-5 md:px-0 text-center">
