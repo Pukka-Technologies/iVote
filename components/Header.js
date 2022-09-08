@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <section className="bg-[url('../public/assets/header-bg.jpg')] h-screen bg-no-repeat bg-center bg-cover relative z-10">
       <div className="bg-black h-screen opacity-50 absolute w-full"></div>
-      <div className="z-20 relative h-[94%]">
+      <div className="z-20 relative h-[90%]">
         <Navbar />
         {/* <div>
         </div> */}
