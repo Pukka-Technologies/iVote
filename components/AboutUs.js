@@ -1,12 +1,14 @@
 import React from "react";
-import Navbar from "./Navbar";
 import Partner from "./Partner";
 import Subcribe from "./Subcribe";
 import Team from "./Team";
 import Footer from "./Footer";
 import Aboutnav from "./Aboutnav";
+import { AiOutlineArrowRight } from 'react-icons/ai';
+import Link from "next/link";
 
 const AboutUs = () => {
+  const pageLink ="https://mediabillo.com/about.php"
   const aboutImage = "/assets/aboutus-bg.png";
   return (
     <div>
@@ -28,6 +30,20 @@ const AboutUs = () => {
            and exhibitions we have made giant strides through the magnitude of projects that we have successfully managed, over the years 
            through partnerships and working with different organizations
           </p>
+   
+        <Link href={pageLink} passHref>
+          <a target={"_blank"}>
+
+        <div className="flex bg-green-500 items-center justify-start md:w-[23%] rounded-full  w-[50%] my-3 px-2 py-2">
+          
+       
+       <button className="px-2 font-semibold">Read More</button>
+       <AiOutlineArrowRight />
+       </div>
+       </a>
+       </Link>
+       
+        
         </div>
         <div className=" basis-2/4 min-w-[300px]">
           <img
