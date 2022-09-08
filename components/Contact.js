@@ -25,7 +25,7 @@ const Contact = () => {
         );
     };
   return (
-    <div className="flex flex-col justify-center items-center gap-[5rem] md:gap-[12rem] md:flex-row h-[90%] mt-3">
+    <div className="flex flex-col justify-center items-center gap-[5rem] md:gap-[12rem] md:flex-row h-[95%] mt-3">
       <article className="basis-1/4">
         <h1 className="text-5xl md:text-4xl lg:text-5xl font-bold pb-8">
           Contact <span className="text-emerald-800">Us</span>
