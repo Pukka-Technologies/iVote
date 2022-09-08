@@ -21,13 +21,12 @@ const AboutUs = () => {
           </h1>
           <p className="leading-9">
          
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
-            reprehenderit recusandae deleniti numquam sunt beatae harum magnam
-            debitis maxime excepturi tempora rerum temporibus officiis
-            repudiandae neque similique nostrum, odit, est officia eius eum
-            dolore? Laboriosam ab et reiciendis illum quia consequatur possimus
-            reprehenderit eaque natus. Consectetur nobis nam dolor explicabo aut
-            quis reprehenderit ea veritatis! Tempore?
+          Media Billo is a burgeoning Ghanaian communications firm with far reaching links to 
+          reputable international and indigenous Public Relation Firms, across the sub-African Region.
+           We posses eye-catching expertise in public relations, media relations, reputation management, corporate communications, 
+           Government relations, issues and crisis management ,development of communications strategies, consultancy ,events management 
+           and exhibitions we have made giant strides through the magnitude of projects that we have successfully managed, over the years 
+           through partnerships and working with different organizations
           </p>
         </div>
         <div className=" basis-2/4 min-w-[300px]">
