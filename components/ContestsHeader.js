@@ -1,11 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navbar from "../components/Navbar";
 import { useStateValue } from '../context/StateProvider';
 
 const ContestsHeader = ({event}) => {
   const [{events}, dispatch] = useStateValue()
+
+
   return (
-    <section className="h-[60vh] bg-[url(/assets/header-bg.jpg)] bg-no-repeat bg-center bg-cover relative z-10">
+    <section className="h-[60vh] bg-no-repeat bg-center bg-cover relative z-10" style={{backgroundImage: `url("${events.find(even => even._id === event)?.imageURL}")`}}>
       <div className="bg-black h-[60vh] opacity-60 absolute w-full"></div>
       <div className="z-20 relative font-text">
         <Navbar />
