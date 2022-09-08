@@ -8,13 +8,13 @@ import Steps from "../components/Steps";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <Header />
       {/* <ScrollArrow /> */}
       <Features />
       <About />
       <Steps />
       <Footer />
-    </div>
+    </>
   );
 }

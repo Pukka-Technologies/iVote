@@ -12,11 +12,9 @@ const Header = () => {
     AOS.init();
   }, []);
   return (
-
-    <section className="bg-header-img h-screen bg-no-repeat bg-center bg-cover relative z-10">
+    <section className="bg-[url('../public/assets/header-bg.jpg')] h-screen bg-no-repeat bg-center bg-cover relative z-10">
       <div className="bg-black h-screen opacity-50 absolute w-full"></div>
-
-      <div className="z-20 relative">
+      <div className="z-20 relative h-[94%]">
         <Navbar />
         {/* <div>
         </div> */}
@@ -40,10 +38,10 @@ const Header = () => {
               <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
                 Explore
               </button>
-              <Link href={'/events'} passHref>
-              <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
-                Ongoing Events
-              </button>
+              <Link href={"/events"} passHref>
+                <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
+                  Ongoing Events
+                </button>
               </Link>
             </div>
           </div>
