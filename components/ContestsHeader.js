@@ -5,9 +5,6 @@ import { useStateValue } from '../context/StateProvider';
 const ContestsHeader = ({event}) => {
   const [{events}, dispatch] = useStateValue()
 
-  useEffect(() => {
-    console.log(events.find(e => e._id === event).imageURL)
-  }, [])
   return (
     <section 
     style={{backgroundImage: `url(${events.find(e => e._id === event)?.imageURL || "/assets/header-bg.jpg"} )`}}
