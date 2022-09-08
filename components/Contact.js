@@ -24,16 +24,28 @@ const Contact = () => {
         );
     };
   return (
-    <div>
-      <form ref={form} onSubmit={sendEmail}>
-        <label>Full Name</label>
-        <input type="text" name="user_name" />
-        <label>Email</label>
-        <input type="email" name="user_email" />
-        <label>Message</label>
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-      </form>
+    <div className="flex justify-center items-center">
+      <article>
+        <h1>Contact Us</h1>
+        <form ref={form} onSubmit={sendEmail}>
+          <label>Full Name</label>
+          <div>
+            <input type="text" name="user_name" />
+          </div>
+          <label>Email</label>
+          <div>
+            <input type="email" name="user_email" />
+          </div>
+          <label>Message</label>
+          <div>
+            <textarea name="message" />
+          </div>
+          <input type="submit" value="Send" />
+        </form>
+      </article>
+      <article>
+        
+      </article>
     </div>
   );
 }
