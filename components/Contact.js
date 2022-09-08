@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import Image from "next/image";
 
 const Contact = () => {
     const form = useRef();
@@ -24,27 +25,47 @@ const Contact = () => {
         );
     };
   return (
-    <div className="flex justify-center items-center">
+    <div className="flex flex-col justify-center items-center gap-[5rem] md:gap-[12rem] md:flex-row h-[90%]">
       <article>
-        <h1>Contact Us</h1>
+        <h1 className="text-5xl font-bold pb-8">
+          Contact <span className="text-emerald-800">Us</span>
+        </h1>
         <form ref={form} onSubmit={sendEmail}>
           <label>Full Name</label>
-          <div>
-            <input type="text" name="user_name" />
+          <div className="pt-2">
+            <input
+              type="text"
+              name="user_name"
+              className="w-full mb-4 border-2 border-green-700 py-1 px-2 focus:outline-none focus:border-green-600"
+            />
           </div>
           <label>Email</label>
-          <div>
-            <input type="email" name="user_email" />
+          <div className="pt-2">
+            <input
+              type="email"
+              name="user_email"
+              className="w-full mb-4 border-2 border-green-700 py-1 px-2 focus:outline-none focus:border-green-600"
+            />
           </div>
           <label>Message</label>
-          <div>
-            <textarea name="message" />
+          <div className="pt-2">
+            <textarea
+              name="message"
+              className="w-full mb-4 border-2 border-green-700 py-1 px-2 focus:outline-none focus:border-green-600"
+            />
           </div>
-          <input type="submit" value="Send" />
+          <div className="bg-green-400 text-white text-center py-2 px-2 cursor-pointer">
+            <input type="submit" value="Send" className="cursor-pointer"/>
+          </div>
         </form>
       </article>
       <article>
-        
+        <Image
+          src="/assets/contact.svg"
+          width={400}
+          height={400}
+          alt="Contact Us"
+        />
       </article>
     </div>
   );
