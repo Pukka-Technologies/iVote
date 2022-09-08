@@ -12,12 +12,13 @@ const Header = () => {
     AOS.init();
   }, []);
   return (
-    <section className="bg-header-img h-screen bg-no-repeat bg-center bg-cover relative z-10">
+    <section className="bg-[url('../public/assets/header-bg.jpg')] h-screen bg-no-repeat bg-center bg-cover relative z-10">
       <div className="bg-black h-screen opacity-50 absolute w-full"></div>
-
-      <div className="z-20 relative">
+      <div className="z-20 relative h-[90%]">
         <Navbar />
-        <div className="items-center 2xl:pt-40 pt-20 flex flex-col justify-center">
+        {/* <div>
+        </div> */}
+        <div className="flex flex-col items-center h-full justify-center">
           <div
             className=" text-white font-text flex flex-col items-center"
             data-aos="fade-up"
@@ -37,10 +38,10 @@ const Header = () => {
               <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
                 Explore
               </button>
-              <Link href={'/events'} passHref>
-              <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
-                Ongoing Events
-              </button>
+              <Link href={"/events"} passHref>
+                <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
+                  Ongoing Events
+                </button>
               </Link>
             </div>
           </div>
