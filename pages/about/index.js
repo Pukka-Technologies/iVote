@@ -1,12 +1,12 @@
-import React from 'react'
-import AboutUs from '../../components/AboutUs'
+import React from "react";
+import AboutUs from "../../components/AboutUs";
 
 const Page = () => {
   return (
-   <div>
-<AboutUs/>
-   </div>
-  )
-}
+    <div>
+      <AboutUs />
+    </div>
+  );
+};
 
-export default Page
+export default Page;
