@@ -5,9 +5,10 @@ import { useStateValue } from '../context/StateProvider';
 const ContestsHeader = ({event}) => {
   const [{events}, dispatch] = useStateValue()
 
-
   return (
-    <section className="h-[60vh] bg-no-repeat bg-center bg-cover relative z-10" style={{backgroundImage: `url("${events.find(even => even._id === event)?.imageURL}")`}}>
+    <section 
+    style={{backgroundImage: `url(${events.find(e => e._id === event)?.imageURL || "/assets/header-bg.jpg"} )`}}
+    className={`h-[60vh]  bg-no-repeat bg-center bg-cover relative z-10`}>
       <div className="bg-black h-[60vh] opacity-60 absolute w-full"></div>
       <div className="z-20 relative font-text">
         <Navbar />

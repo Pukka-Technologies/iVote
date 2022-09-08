@@ -48,7 +48,9 @@ const Navbar = () => {
             <Link href={"/events"}>
               <li>Events</li>
             </Link>
-            <li>About Us</li>
+            <Link href={"/about"}>   
+             <li>About Us</li></Link>
+        
             <li>Contact Us</li>
           </ul>
         </div>
