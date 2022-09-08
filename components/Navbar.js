@@ -22,7 +22,9 @@ const Navbar = () => {
           <Link href={"/events"}>
             <li>Events</li>
           </Link>
-          <li>Contact Us</li>
+          <Link href={"/contact"}>
+            <li>Contact Us</li>
+          </Link>
           <li>About Us</li>
         </ul>
         {/* <div className="flex items-end">
