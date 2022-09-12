@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { BsHandThumbsUp } from "react-icons/bs";
+import { VscGraph } from "react-icons/vsc";
 
 const Event = ({ data, status }) => {
   const {
@@ -20,8 +21,9 @@ const Event = ({ data, status }) => {
     <article className="bg-white rounded-lg overflow-hidden cursor-pointer">
       <div
         onClick={() =>
-          status == "ongoing" && router.push({
-            pathname: `/events/${name.toLowerCase().replace(/ /g,"_")}`,
+          status == "ongoing" &&
+          router.push({
+            pathname: `/events/${name.toLowerCase().replace(/ /g, "_")}`,
             query: { _id: _id },
           })
         }
@@ -48,22 +50,44 @@ const Event = ({ data, status }) => {
         </div>
         <div className="flex items-center justify-between">
           {/* event status badge */}
-          <div
-            className={`${
-              status === "ongoing"
-                ? "bg-green-200 text-green-500"
-                : "bg-yellow-200 text-yellow-500"
-            }  font-bold text-xs uppercase px-4 py-2 rounded-lg`}
-          >
-            {status}
+          {
+            <div
+              className={`${
+                status === "ongoing"
+                  ? "bg-green-200 text-green-500"
+                  : "bg-yellow-200 text-yellow-500"
+              }  font-bold text-xs uppercase px-4 py-2 rounded-lg`}
+            >
+              {status}
+            </div>
+          }
+          {/* leaderboard badge */}
+          <div className="flex items-center">
+            {status == "ongoing" && (
+              <div
+                className="bg-red-400 hover:bg-red-500 transition-all duration-100 ease-in-out  text-white font-bold text-xl uppercase px-4 py-2 rounded-lg"
+                onClick={() =>
+                  status == "ongoing" &&
+                  router.push({
+                    pathname: `/events/leaderboard/${name
+                      .toLowerCase()
+                      .replace(/ /g, "_")}`,
+                    query: { _id: _id },
+                  })
+                }
+              >
+                <VscGraph />
+              </div>
+            )}
           </div>
           {/* vote badge */}
           <div className="flex items-center">
             <div
-              className="bg-gray-400 hover:bg-gray-500 transition-all duration-100 ease-in-out  text-white font-bold text-xl uppercase px-4 py-2 rounded-lg"
+              className="bg-gray-500 hover:bg-gray-600 transition-all duration-100 ease-in-out  text-white font-bold text-xl uppercase px-4 py-2 rounded-lg"
               onClick={() =>
-                status == "ongoing" && router.push({
-                  pathname: `/events/${name.toLowerCase().replace(/ /g,"_")}`,
+                status == "ongoing" &&
+                router.push({
+                  pathname: `/events/${name.toLowerCase().replace(/ /g, "_")}`,
                   query: { _id: _id },
                 })
               }

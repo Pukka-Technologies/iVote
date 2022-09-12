@@ -8,8 +8,7 @@ const Subcribe = () => {
         <div className="md:w-[60%] w-[50%]  flex flex-col items-start justify-center gap-y-2 ">
           <h1 className="text-2xl font-semibold text-left">Connect with us</h1>
           <p className="leading-6">
-            Subcribe to Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Vitae reprehenderit recusandae
+            Subcribe to get notification about new updates, information discount, etc.
           </p>
         </div >
         <div className="md:w-[40%]  w-[50%]  flex items-center justify-center">

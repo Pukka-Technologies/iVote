@@ -18,7 +18,7 @@ const Events = () => {
     <section className="bg-gray-100">
       {/* searchbar */}
     <div className="w-full flex items-center justify-center md:justify-end py-2 md:px-20">
-    <div className="w-[90%] md:w-[30%]   flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
+    <div className="w-[90%] md:w-[30%] flex items-center justify-center bg-gray-300 rounded-full px-4 py-2 focus:outline-none focus:border-gray-400">
         <input
           type="text"
           placeholder="Search event....."
