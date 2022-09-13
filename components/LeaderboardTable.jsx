@@ -4,16 +4,13 @@ const LeaderboardTable = ({leaderboard}) => {
   return (
     <div className="w-full flex flex-col md:px-14 items-center justify-center p-8 my-16 overflow-x-auto">
       
-<div className="relative w-full shadow-md sm:rounded-lg">
-    <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+<div className="relative w-full shadow-md ">
+    <table className="w-full sm:rounded-lg text-sm text-left text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-300 dark:text-gray-500">
             <tr>
                 <th scope="col" className="py-3 px-6"></th>
                 <th scope="col" className="py-3 px-6">
                     Contestant
-                </th>
-                <th scope="col" className="py-3 px-6 text-center">
-                    Category
                 </th>
                 <th scope="col" className="py-3 px-6 text-center">
                     Votes
@@ -34,9 +31,6 @@ const LeaderboardTable = ({leaderboard}) => {
                 <th scope="row" className="py-4 px-6 font-medium whitespace-nowrap">
                     {contestant.name}
                 </th>
-                <td className="py-4 px-6 text-center">
-                    Laptop
-                </td>
                 <td className="py-4 px-6 text-center ">
                     {contestant.total_votes}
                 </td>
