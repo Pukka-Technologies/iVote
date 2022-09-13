@@ -7,6 +7,7 @@ export const fetchData = async (route, callback) => {
             url: route,
         })
 
+        console.log(data)
         callback(data)
 
     } catch (error) {
@@ -39,6 +40,9 @@ export const generateLeaderboard = (contestants, votes) => {
       delete contestant.votes;
       return { ...contestant, total_votes, online_votes, offline_votes };
     });
+
+    console.log(">>>>",contestants)
+
     return {
       leaderboard: updatedContestants,
       total_votes_cast: updatedContestants.reduce(
