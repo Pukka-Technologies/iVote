@@ -12,9 +12,10 @@ const EventBoard = () => {
 
     const [leaderboard, setLeaderboard] = useState(null)
     const [totalVotes, setTotalVotes] = useState(null)
+    const [event_name, setEvent_name] = useState(null)
 
     const router = useRouter()
-    const { _id } = router.query
+    const { _id, eid } = router.query
 
     const fetchLeaderboard = () => {
 
@@ -43,12 +44,17 @@ const EventBoard = () => {
 
       useEffect(() => {
         fetchLeaderboard()
+        const eventName = eid.replace(/_/g, " ").split(" ")
+        for (let i = 0; i < eventName.length; i++) {
+          eventName[i] = eventName[i].charAt(0).toUpperCase() + eventName[i].slice(1);
+      }
+      setEvent_name(eventName.join(" "))
       }, [])
       
 
   return (
     <>
-      <EventsHeader />
+      <EventsHeader leaderboard={event_name}/>
         <LeaderboardTable leaderboard={leaderboard} />
       <Footer/>
     </>
