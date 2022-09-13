@@ -34,8 +34,8 @@ const LeaderboardTable = ({leaderboard}) => {
                 <td className="py-4 px-6 text-center ">
                     {contestant.total_votes}
                 </td>
-                <td className="py-4 px-6 text-right">
-                    <span className="font-medium px-2 bg-gray-300 rounded-lg text-blue-600 dark:text-blue-500">{contestant.contestant_code}</span>
+                <td className="py-4 px-6 flex items-end justify-end">
+                    <p className="font-medium px-2 w-16 max-w-20 text-center bg-gray-300 rounded-lg text-blue-600 dark:text-blue-500">{contestant.contestant_code}</p>
                 </td>
             </tr>
             ))}
