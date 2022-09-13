@@ -14,12 +14,11 @@ const EventBoard = () => {
     const [totalVotes, setTotalVotes] = useState(null)
 
     const router = useRouter()
-    const event_id = router.query
+    const { _id } = router.query
 
     const fetchLeaderboard = () => {
 
       fetchData("vote", async (data) => {
-        const { _id } = event_id;
         const year = new Date().getFullYear();
         const event_votes = data.data.filter(
           (vote) => vote.event_id === _id && vote.year == year
