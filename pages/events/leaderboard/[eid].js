@@ -16,7 +16,7 @@ const EventBoard = () => {
     const router = useRouter()
     const event_id = router.query
 
-    const fetchLeaderboard = (params) => {
+    const fetchLeaderboard = () => {
 
       fetchData("vote", async (data) => {
         const { _id } = event_id;
@@ -33,7 +33,7 @@ const EventBoard = () => {
           event_votes
         );
 
-        console.log("leaderboard", leaderboard);
+        leaderboard.sort((a, b) => b.total_votes - a.total_votes)
 
         setLeaderboard(leaderboard);
         setTotalVotes(total_votes_cast);
