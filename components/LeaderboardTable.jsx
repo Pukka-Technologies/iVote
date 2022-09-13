@@ -6,7 +6,7 @@ const LeaderboardTable = ({leaderboard}) => {
       
 <div className="relative w-full shadow-md sm:rounded-lg">
     <table className="w-full text-sm text-left text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-200 dark:text-gray-500">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-300 dark:text-gray-500">
             <tr>
                 <th scope="col" className="py-3 px-6"></th>
                 <th scope="col" className="py-3 px-6">
@@ -25,7 +25,7 @@ const LeaderboardTable = ({leaderboard}) => {
         </thead>
         <tbody>
             {leaderboard?.map((contestant, idx) => (
-                <tr key={contestant._id} className={`border-b ${idx % 2 > 0 ? "bg-gray-100" : "text-gray-50 bg-green-300"} dark:border-gray-50`}>
+                <tr key={contestant._id} className={`border-b ${idx % 2 > 0 ? "bg-gray-100 text-gray-500" : "text-white bg-green-400"} text-[1rem] dark:border-gray-50`}>
                 <td className="py-2 px-6">
                     <div className="relative w-12 h-12 rounded-md overflow-hidden">
                         <Image src={contestant.imageURL} layout="fill" objectFit="cover" />
@@ -41,7 +41,7 @@ const LeaderboardTable = ({leaderboard}) => {
                     {contestant.total_votes}
                 </td>
                 <td className="py-4 px-6 text-right">
-                    <p className="font-medium text-blue-600 dark:text-blue-500">{contestant.contestant_code}</p>
+                    <span className="font-medium px-2 bg-gray-300 rounded-lg text-blue-600 dark:text-blue-500">{contestant.contestant_code}</span>
                 </td>
             </tr>
             ))}
