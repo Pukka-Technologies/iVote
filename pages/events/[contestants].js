@@ -20,6 +20,7 @@ const Contestants = () => {
       console.log(router.pathname);
     }
   }, [router]);
+
   useEffect(() => {
     events.length === 0 && fetchData("event", async (data) => {
       if (data.success) {
@@ -43,6 +44,12 @@ const Contestants = () => {
       }
     });
   }, []);
+
+
+  useEffect(() => {
+  //  console.log(">>>>",  events.find(event => event._id === id).imageURL);
+  }, [])
+  
 
   return (
     <>
