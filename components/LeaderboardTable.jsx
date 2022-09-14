@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { fetchLeaderboard } from "../utils/functions";
+import { BiLoader } from "react-icons/bi";
 
 const LeaderboardTable = ({ id }) => {
-  const [contestants, setContestants] = useState([]);
+  const [contestants, setContestants] = useState(null);
   const [totalVotes, setTotalVotes] = useState(0)
   useEffect(() => {
     const event_id = id;
@@ -46,7 +47,7 @@ const LeaderboardTable = ({ id }) => {
             </tr>
           </thead>
           <tbody>
-            {contestants.length > 0 &&
+            {contestants && contestants.length > 0 &&
               contestants.map((contestant, idx) => (
                 <tr
                   key={contestant._id}
@@ -82,6 +83,25 @@ const LeaderboardTable = ({ id }) => {
                   </td>
                 </tr>
               ))}
+              {
+                contestants && contestants.length == 0 && (
+                  <tr className="border-b bg-gray-100 text-gray-500 text-[1rem] dark:border-gray-50">
+                    <td className="py-4 px-6 text-center" colSpan={5}>No Contestants</td>
+                  </tr>
+
+                )
+              }
+              {
+                !contestants && (
+                  <tr className="border-b flex items-center justify-center  text-gray-500 text-[1rem] ">
+                    <td className="py-4 px-6 flex items-center justify-center text-center" colSpan={5}>
+                      {/* loading icon spin */}
+                      <BiLoader className="animate-spin text-2xl" />
+                      <span className="ml-2">Loading...</span>
+                    </td>
+                  </tr> 
+                ) 
+              }
           </tbody>
         </table>
       </div>
