@@ -58,8 +58,7 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">Verifiable Transactions</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+           Media Billo ensures that all transactions preserve integrity, and done peacefully without aany constraints.Transactions in our system follows the electronic payment protocols.
             </p>
           </p>
         </article>
@@ -104,8 +103,7 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">Faster Voting System</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Our system has made voting faster, and more accurate than manual counting.
             </p>
           </p>
         </article>
