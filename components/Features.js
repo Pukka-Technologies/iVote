@@ -32,8 +32,9 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">100% Secure</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Media Billo is here to deliver the highest standards of communications solutions
+             to our clients. We intend to achieve this much, with a commiserate combination 
+             of professionalism, speed, precision , creativity & innovation.
             </p>
           </p>
         </article>
@@ -45,8 +46,7 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">Supports Telco</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            To climb to the apex of our industry and establish our brand, as the most effective in proffering communications solutions for clients
             </p>
           </p>
         </article>
@@ -78,8 +78,7 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">Easy to Use</h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+           Our service is designed to help you optimize and achive operational efficiency and productivity. Our experts will help you analyze and optimize bottlenecks of your organization’s processes to navigate you towards the desired future state for your process management.
             </p>
           </p>
         </article>
@@ -93,8 +92,7 @@ const Features = () => {
               Cheaper than Ballot System
             </h3>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Providing customized end-to-end solutions with the latest technologies in Hardware and Software, helping businesses transform themselves for the future
             </p>
           </p>
         </article>
