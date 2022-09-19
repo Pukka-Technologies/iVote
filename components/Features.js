@@ -78,7 +78,7 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">Easy to Use</h3>
             <p>
-           Our service is designed to help you optimize and achive operational efficiency and productivity. Our experts will help you analyze and optimize bottlenecks of your organization’s processes to navigate you towards the desired future state for your process management.
+           Our service is designed to help you optimize and achive operational efficiency and productivity. Our system  helps you analyze and optimize bottlenecks of your processes by navigating  towards the desired events and contestants.
             </p>
           </p>
         </article>
@@ -92,7 +92,7 @@ const Features = () => {
               Cheaper than Ballot System
             </h3>
             <p>
-            Providing customized end-to-end solutions with the latest technologies in Hardware and Software, helping businesses transform themselves for the future
+            Providing customized end-to-end solutions with the latest technologies in Hardware and Software.
             </p>
           </p>
         </article>
