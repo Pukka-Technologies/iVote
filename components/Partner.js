@@ -1,10 +1,12 @@
 import React from "react";
+import AboutUs from "./AboutUs";
 
 const Partner = () => {
   const mediabillo = "/assets/media billo logo.png";
   const agricGhana = "/assets/Agric Ghana.png";
   const jmc= "/assets/jmc.png";
-  const p4 = "/assets/p4.png";
+
+  const p5 = "/assets/p5.png";
 
 
   return (
@@ -21,7 +23,8 @@ const Partner = () => {
             <div className="flex items-center justify-center">  <img src={mediabillo} alt="partner1" /></div>
             <div className="flex items-center justify-center">  <img src={agricGhana} alt="partner1" /></div>
             <div className="flex items-center justify-center">  <img src={jmc} alt="partner1" /></div>
-            <div className="flex items-center justify-center">  <img src={p4} alt="partner1" /></div>
+            {/* <div className="flex items-center justify-center">  <img src={p4} alt="partner1" /></div> */}
+            <div className="flex items-center justify-center">  <img src={p5} alt="partner1" /></div>
         
       
     
