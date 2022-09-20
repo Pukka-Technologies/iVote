@@ -5,7 +5,7 @@ const Partner = () => {
   const mediabillo = "/assets/media billo logo.png";
   const agricGhana = "/assets/Agric Ghana.png";
   const jmc= "/assets/jmc.png";
-  // const p4 = "/assets/p4.png";
+
   const p5 = "/assets/p5.png";
 
 

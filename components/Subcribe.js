@@ -14,7 +14,7 @@ const Subcribe = () => {
         <div className="md:w-[40%]  w-[50%]  flex items-center justify-center">
             <div className="w-full py-2 px-1 flex  gap-x-1 justify-between bg-white focus:border  ">
             <input type="email" placeholder="Enter your email" className="w-full py-2  bg-transparent focus:border focus:border-solid focus:border-green-400 outline-none px-1 "/>
-            <button className="bg-green-200 rounded px-2 py-1 text-sm font-semibold hover:bg-green-500">Continue</button>
+            <button className="bg-green-200 rounded px-2 py-1 text-sm font-semibold hover:bg-green-400 transition-all duration-75 ease-in-out">Continue</button>
             </div>
 
         </div>
