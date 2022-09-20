@@ -31,8 +31,7 @@ const Header = () => {
               <span className="text-green-400"> Media Billo</span>
             </h1>
             <p className="lg:text-xl text-lg pt-7 pb-7 md:w-7/12 w-10/12 text-center">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua
+            Expertise in  media relations,  development of communications strategies, events management and exhibitions
             </p>
             <div className="flex md:gap-6 gap-3 mb-20 md:mb-0">
               <button className="bg-green-400 px-[1.5em] py-[0.7em] lg:text-xl">
