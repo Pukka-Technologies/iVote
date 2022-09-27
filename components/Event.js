@@ -69,7 +69,7 @@ const Event = ({ data, status }) => {
                 onClick={() =>
                   status == "ongoing" &&
                   router.push({
-                    pathname: `/events/leaderboard/${name
+                    pathname: `/event/leaderboard/${name
                       .toLowerCase()
                       .replace(/ /g, "_")}`,
                     query: { _id: _id },
