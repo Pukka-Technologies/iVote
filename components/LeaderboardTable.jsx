@@ -29,7 +29,7 @@ const LeaderboardTable = ({ id }) => {
     <div className="w-full flex flex-col md:px-14 items-center justify-center p-8 my-16 overflow-x-auto">
       <div className="relative w-full shadow-md ">
         <table className="w-full sm:rounded-lg text-sm text-left font-text">
-          <thead className="text-xs text-white uppercase bg-green-400 text-base">
+          <thead className="text-base text-white uppercase bg-green-400 border-b-[1px]">
             <tr>
               <th scope="col" className="py-3 px-6"></th>
               <th scope="col" className="py-3 px-6">
@@ -53,8 +53,8 @@ const LeaderboardTable = ({ id }) => {
                   key={contestant._id}
                   className={`border-b ${
                     idx % 2 > 0
-                      ? "bg-gray-100 text-gray-500"
-                      : "text-white bg-green-400"
+                      ? "bg-green-400 text-white"
+                      : "bg-gray-100"
                   } text-[1rem] dark:border-gray-50`}
                 >
                   <td className="py-2 px-6">
