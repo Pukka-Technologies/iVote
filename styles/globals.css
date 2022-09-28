@@ -13,3 +13,7 @@ progress[value]::-webkit-progress-bar {
 progress::-webkit-progress-value {
   background-color: rgb(74 222 128);
 }
+/* for firefox browsers */
+progress::-moz-progress-bar {
+  background-color: rgb(74 222 128);
+}
