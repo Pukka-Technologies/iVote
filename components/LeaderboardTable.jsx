@@ -84,7 +84,7 @@ const LeaderboardTable = ({ id }) => {
                   <td className="py-4 px-6 flex items-center justify-center">
                     <p className="font-medium px-5 flex items-center justify-center gap-6 py-3 text-center rounded-lg text-[#22876c]">
                       <progress max="100" value={contestant.votes}></progress>
-                      <div>{contestant.votes}</div>
+                      <div>{contestant.votes}%</div>
                     </p>
                   </td>
                 </tr>
