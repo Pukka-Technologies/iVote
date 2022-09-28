@@ -28,8 +28,8 @@ const LeaderboardTable = ({ id }) => {
   return (
     <div className="w-full flex flex-col md:px-14 items-center justify-center p-8 my-16 overflow-x-auto">
       <div className="relative w-full shadow-md ">
-        <table className="w-full sm:rounded-lg text-sm text-left text-gray-500 dark:text-gray-400">
-          <thead className="text-xs text-gray-700 uppercase bg-gray-300 dark:text-gray-500">
+        <table className="w-full sm:rounded-lg text-sm text-left font-text">
+          <thead className="text-xs text-white uppercase bg-green-400 text-base">
             <tr>
               <th scope="col" className="py-3 px-6"></th>
               <th scope="col" className="py-3 px-6">
