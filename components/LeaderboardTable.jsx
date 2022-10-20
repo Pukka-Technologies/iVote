@@ -85,7 +85,7 @@ const LeaderboardTable = ({ id }) => {
                     <p className="font-medium px-5 flex items-center justify-center gap-6 py-3 text-center rounded-lg text-[#22876c]">
                       {contestant?.votes}
                       <progress max="100" value={contestant?.votes}></progress>
-                      <div>{((contestant?.votes / total_votes_cast)*100).toFixed(1)}%</div>
+                      <div>{((contestant?.votes / totalVotes)*100).toFixed(1)}%</div>
                     </p>
                   </td>
                 </tr>
