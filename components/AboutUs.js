@@ -11,7 +11,7 @@ const AboutUs = () => {
   const pageLink ="https://mediabillo.com/about.php"
   const aboutImage = "/assets/aboutus-bg.png";
   return (
-    <div>
+    <div   className="font-text">
       <div className="m-auto px-6 w-full h-full bg-green-50 ">
       <div className="text-black">
         <Aboutnav />
