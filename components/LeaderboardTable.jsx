@@ -49,7 +49,9 @@ const LeaderboardTable = ({ id }) => {
           <tbody>
             {contestants &&
               contestants.length > 0 &&
-              contestants.map((contestant, idx) => (
+              contestants.map((contestant, idx) => {
+                let percentage = ((contestant?.votes / totalVotes)*100).toFixed(1)
+                return(
                 <tr
                   key={contestant?._id}
                   className={`border-b ${
@@ -84,12 +86,12 @@ const LeaderboardTable = ({ id }) => {
                   <td className="py-4 px-6 flex items-center justify-center">
                     <p className="font-medium px-5 flex items-center justify-center gap-6 py-3 text-center rounded-lg text-[#22876c]">
                       {contestant?.votes}
-                      <progress max="100" value={contestant?.votes}></progress>
-                      <div>{((contestant?.votes / totalVotes)*100).toFixed(1)}%</div>
+                      <progress max="100" value={percentage}></progress>
+                      <div>{percentage}%</div>
                     </p>
                   </td>
                 </tr>
-              ))}
+              )})}
             {contestants && contestants.length == 0 && (
               <tr className="border-b bg-gray-100 text-gray-500 text-[1rem] dark:border-gray-50">
                 <td className="py-4 px-6 text-center" colSpan={5}>
