@@ -2,3 +2,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* leaderboard progress bar styles */
+progress[value] {
+    background-color: rgb(202, 202, 202);
+}
+progress[value]::-webkit-progress-bar {
+  background-color: rgb(227, 225, 225);
+}
+progress::-webkit-progress-value {
+  background-color: #22876c;
+}
+/* for firefox browsers */
+progress::-moz-progress-bar {
+  background-color: #22876c;
+}
