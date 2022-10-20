@@ -21,7 +21,7 @@ const LeaderboardTable = ({ id }) => {
         setContestants(leaderboard);
         setTotalVotes(total_votes_cast)
       } else {
-        console.log(data);
+        // console.log(data);
       }
     });
   }, []);
@@ -51,7 +51,7 @@ const LeaderboardTable = ({ id }) => {
               contestants.length > 0 &&
               contestants.map((contestant, idx) => (
                 <tr
-                  key={contestant._id}
+                  key={contestant?._id}
                   className={`border-b ${
                     idx % 2 > 0 ? "bg-green-400 text-white" : "bg-gray-100"
                   } text-[1rem] dark:border-gray-50`}
@@ -59,7 +59,7 @@ const LeaderboardTable = ({ id }) => {
                   <td className="py-2 px-6">
                     <div className="relative w-12 h-12 rounded-md overflow-hidden">
                       <Image
-                        src={contestant.imageURL}
+                        src={contestant?.imageURL}
                         layout="fill"
                         objectFit="cover"
                       />
@@ -69,22 +69,23 @@ const LeaderboardTable = ({ id }) => {
                     scope="row"
                     className="py-4 px-6 font-medium flex flex-col gap-y-1 whitespace-nowrap"
                   >
-                    {contestant.name}
+                    {contestant?.name}
                     <span className="text-sm font-normal">
-                      ({contestant.contestant_code})
+                      ({contestant?.contestant_code})
                     </span>
                   </th>
                   <td className="py-4 px-6 text-center ">
-                    {contestant.online_votes}
+                    {contestant?.online_votes}
                   </td>
                   <td className="py-4 px-6 text-center ">
-                    {contestant.offline_votes}
+                    {contestant?.offline_votes}
                   </td>
-                  {/* <td className="py-4 px-6 text-center ">{contestant.votes}</td> */}
+                  {/* <td className="py-4 px-6 text-center ">{contestant?.votes}</td> */}
                   <td className="py-4 px-6 flex items-center justify-center">
                     <p className="font-medium px-5 flex items-center justify-center gap-6 py-3 text-center rounded-lg text-[#22876c]">
-                      <progress max="100" value={contestant.votes}></progress>
-                      <div>{contestant.votes}%</div>
+                      {contestant?.votes}
+                      <progress max="100" value={contestant?.votes}></progress>
+                      <div>{((contestant?.votes / total_votes_cast)*100).toFixed(1)}%</div>
                     </p>
                   </td>
                 </tr>
