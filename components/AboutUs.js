@@ -23,7 +23,7 @@ const AboutUs = () => {
           </h1>
           <p className="leading-9">
          
-          Media Billo is a burgeoning Ghanaian communications firm with far reaching links to 
+          iVote is a burgeoning Ghanaian communications firm with far reaching links to 
           reputable international and indigenous Public Relation Firms, across the sub-African Region.
            We posses eye-catching expertise in public relations, media relations, reputation management, corporate communications, 
            Government relations, issues and crisis management ,development of communications strategies, consultancy ,events management 

@@ -28,7 +28,7 @@ const Header = () => {
           >
             <h1 className="lg:text-7xl text-5xl font-extrabold md:w-8/12 px-5 md:px-0 text-center">
               Event Execution with
-              <span className="text-green-400"> Media Billo</span>
+              <span className="text-green-400"> iVote</span>
             </h1>
             <p className="lg:text-xl text-lg pt-7 pb-7 md:w-7/12 w-10/12 text-center">
             Expertise in  media relations,  development of communications strategies, events management and exhibitions

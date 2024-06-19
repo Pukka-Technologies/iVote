@@ -32,7 +32,7 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">100% Secure</h3>
             <p>
-            Media Billo is here to deliver the highest standards of communications solutions
+            iVote is here to deliver the highest standards of communications solutions
              to our clients. We intend to achieve this much, with a commiserate combination 
              of professionalism, speed, precision , creativity & innovation.
             </p>
@@ -58,7 +58,7 @@ const Features = () => {
           <p>
             <h3 className="py-3 font-bold text-lg">Verifiable Transactions</h3>
             <p>
-           Media Billo ensures that all transactions preserve integrity, and done peacefully without aany constraints.Transactions in our system follows the electronic payment protocols.
+           iVote ensures that all transactions preserve integrity, and done peacefully without aany constraints.Transactions in our system follows the electronic payment protocols.
             </p>
           </p>
         </article>
